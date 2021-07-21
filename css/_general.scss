@@ -1,5 +1,5 @@
 .general{
-    background-image: url(/img/bacground.png);
+    background-image: url(../img/bacground.png);
     height: 702px;
     background-position: center center;
     background-size: cover;
@@ -9,7 +9,7 @@
     }
     @include phones{
         height: 530px;
-        background-image: url(/img/bacground_phone.png);
+        background-image: url(../img/bacground_phone.png);
     }
 
     &__content{
