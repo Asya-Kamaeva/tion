@@ -1,0 +1,116 @@
+.block{
+    padding-top: 57px;
+    padding-bottom: 20%;
+
+    @include tablets{
+        padding-top: 44px;
+    }
+    @include phones{
+        padding-top: 35px;
+    }
+
+    &__unit{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &__content{
+        width: 66%;
+
+        @include tablets{
+            width: 88%;
+            max-width: 650px;
+        }
+        @include phones{
+            width: 97%;
+            max-width: 500px;
+        }
+    }
+
+    &__part{
+        font-family: "SF Pro Display";
+        background-color: #A32CE8;
+        color: #F9EDFD;
+        position: relative;
+    }
+    &__icon{
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        width: 87px;
+        height: 87px;
+        background-color: #A32CE8;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include tablets{
+            width: 84px;
+            height: 84px;
+            top: -50px;
+        }
+
+        &:before{
+            content: "!";
+            color: #E0AFF2;
+           font-size: 36px;
+           font-weight: 700;
+        }
+
+    }
+     
+    &__info{
+        font-family: "SF Pro Display";
+        padding: 50px 38px 40px 46px; 
+        line-height: 22px;
+
+        @include tablets{
+            padding: 46px 40px 26px 36px;
+        }
+        @include phones{
+            padding: 61px 20px 28px 24px;
+        }
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 7px;
+
+        @include phones{
+            font-size: 18px;
+            line-height: 22px;
+        }
+         
+    }
+
+    &__desc{
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 5%;
+
+        @include tablets{
+            margin-bottom: 1%;
+        }
+
+        @include phones{
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 2%;
+        }
+
+        
+    }
+    &__more{
+        font-weight: 400;
+        font-size: 15px;
+
+        @include phones{
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+}

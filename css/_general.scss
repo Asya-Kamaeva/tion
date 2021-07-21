@@ -1,0 +1,113 @@
+.general{
+    background-image: url(/img/bacground.png);
+    height: 702px;
+    background-position: center center;
+    background-size: cover;
+
+    @include tablets{
+        height: 480px;
+    }
+    @include phones{
+        height: 530px;
+        background-image: url(/img/bacground_phone.png);
+    }
+
+    &__content{
+        width: 58%;
+        height: 100%;
+        color: #fff;
+        position: relative;
+
+        @include phones{
+            width: 100%;
+            padding-left: 18px;  
+        }
+    }
+
+    &__date{
+        font-weight: 800;
+        font-size: 25px;
+        position: absolute;
+        top: 222px;
+
+        @include tablets{
+            font-size: 18px;
+            top: 149px;
+        }
+        @include phones{
+            top: 74px;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 70px;
+        line-height: 60px;
+        letter-spacing: -0.05em;
+        position: absolute;
+        top: 290px;
+
+        @include tablets{
+            font-size: 50px;
+            line-height: 50px;
+            top: 197px;
+        }
+        @include phones{
+            font-size: 40px;
+            line-height: 40px;
+            top: 104px;
+        }
+
+        @media screen and (max-width: 360px) {
+        font-size: 32px;
+        } 
+    }
+
+    &__desc{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #E0C1EB;
+        width: 80%;
+        position: absolute;
+        top: 447px;
+
+        @include tablets{
+            top: 312px;
+            font-size: 15px;
+            line-height: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        @include phones{
+            font-size: 12px;
+            line-height: 14px;
+            width: 95%;
+            top: 192px;
+            max-width: 500px;
+        }
+    }
+
+    &__desc span{
+        font-weight: 400;
+    }
+
+    &__info{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #E1AFF2;
+        position: absolute;
+        bottom: 85px;
+
+        @include tablets{
+            font-size: 12px;
+            bottom: 32px;
+        }
+
+        @include phones{
+            bottom: 4%;
+            position: absolute;
+            padding-top: 0;
+        }
+    }
+}
